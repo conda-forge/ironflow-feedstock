@@ -1,6 +1,6 @@
 {% set name = "ironflow" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "7d078176eeca9753fd1cc5a3abb08da22bd9f13b271c5e322cc211dfcfb8de0a" %}
+{% set version = "0.0.3" %}
+{% set sha256 = "ede9d4a4637bcbccf6db23786dede8a76ad0a9745723a1bf67f813810c51d3d3" %}
 
 package:
   name: {{ name|lower }}
@@ -27,9 +27,13 @@ requirements:
     - matplotlib-base >=3.6.0
     - nglview >=3.0.3
     - numpy >=1.23.3
+    - pandas >=1.5.0
     - pyiron_base >=0.5.24
     - pyiron_atomistics >=0.2.58
+    - pyiron_gui >=0.0.9
     - ryvencore ==0.3.1.1
+    - seaborn >=0.11.2
+    - traitlets >=5.2.1.post0
 
 test:
   imports:
