@@ -1,6 +1,6 @@
 {% set name = "ironflow" %}
-{% set version = "0.0.3" %}
-{% set sha256 = "ede9d4a4637bcbccf6db23786dede8a76ad0a9745723a1bf67f813810c51d3d3" %}
+{% set version = "0.0.4" %}
+{% set sha256 = "c742d4c604b6cc2b5997979dc49ec089734714aff6c17bb7aa9fa02abc7c0a20" %}
 
 package:
   name: {{ name|lower }}
