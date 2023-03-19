@@ -1,11 +1,11 @@
-About ironflow
-==============
+About ironflow-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ironflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyiron/ironflow
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ironflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: ironflow - A visual scripting interface for pyiron.
 
