@@ -1,6 +1,5 @@
 {% set name = "ironflow" %}
 {% set version = "0.0.7" %}
-{% set sha256 = "bedce1794dec8556940eedef76a63551166d9761fb14d0a8870a8ca443588697" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ironflow-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: bedce1794dec8556940eedef76a63551166d9761fb14d0a8870a8ca443588697
   patches:
     - versioneer.patch
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -23,21 +22,20 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - ipycanvas >=0.13.1
-    - ipython >=7.21.0
+    - ipycanvas
+    - ipython
     - ipywidgets >=7,<8
-    - matplotlib-base >=3.6.0
-    - nglview >=3.0.3
-    - numpy >=1.23.3
-    - pandas >=1.5.0
-    - pyiron_base >=0.5.24
-    - pyiron_atomistics >=0.2.58
+    - matplotlib-base
+    - nglview
+    - numpy
+    - owlready2
+    - pyiron_base
+    - pyiron_atomistics
+    - pyiron_gui >=0.0.8
     - pyiron_ontology >=0.1.3
-    - pyiron_gui >=0.0.9
-    - ryvencore ==0.3.1.1
-    - seaborn >=0.11.2
-    - traitlets >=5.2.1.post0
-    - owlready2 >=0.40
+    - ryvencore =0.3.1.1
+    - seaborn
+    - traitlets
 
 test:
   imports:
@@ -52,11 +50,6 @@ about:
   summary: ironflow - A visual scripting interface for pyiron.
   license: BSD-3-Clause
   license_file: LICENSE
-  description: |
-    ironflow combines ryven, ipycanvas and ipywidgets to provide a Jupyter-based visual scripting gui for building and 
-    running pyiron workflow graphs.
-  doc_url: https://pyiron.org
-  dev_url: https://github.com/pyiron
 
 extra:
   recipe-maintainers:

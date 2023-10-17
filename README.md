@@ -9,14 +9,6 @@ Package license: BSD-3-Clause
 
 Summary: ironflow - A visual scripting interface for pyiron.
 
-Development: https://github.com/pyiron
-
-Documentation: https://pyiron.org
-
-ironflow combines ryven, ipycanvas and ipywidgets to provide a Jupyter-based visual scripting gui for building and
-running pyiron workflow graphs.
-
-
 Current build status
 ====================
 
