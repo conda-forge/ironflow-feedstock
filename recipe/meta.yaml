@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ironflow-{{ version }}.tar.gz
   sha256: 4c6c223c46ac1b3409b985a358b10d1476583ebab7e1b28f05a7600401c75f85
-  patches:
-    - versioneer.patch
 
 build:
   noarch: python
