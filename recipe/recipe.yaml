@@ -1,7 +1,6 @@
 schema_version: 1
 
 context:
-  python_min: "3.10"
   name: ironflow
   version: "0.1.0"
 
@@ -20,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${[ python_min }}.*
     - pip
     - setuptools
   run:
@@ -49,7 +48,9 @@ tests:
       imports:
         - ironflow
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: ironflow - A visual scripting interface for pyiron.
